@@ -197,36 +197,36 @@ const routes = [
     { path: '/page-services', component: PageServices },
     { path: '/page-team', component: PageTeam },
 
-    //Help Center
+    // //Help Center
     { path: '/helpcenter-overview', component: HelpCenterOverview },
     { path: '/helpcenter-faqs', component: HelpCenterFaqs },
     { path: '/helpcenter-guides', component: HelpCenterGuides },
     { path: '/helpcenter-support-request', component: HelpCenterSupportRequest },
 
-    //Shop
+    // //Shop
     { path: '/shop-products', component: ShopProducts },
     { path: '/shop-product-detail', component: ShopProductDetail },
     { path: '/shop-cart', component: ShopCart },
     { path: '/shop-checkouts', component: ShopCheckouts },
     { path: '/shop-myaccount', component: ShopMyAccount },
 
-    //Utility
+    // //Utility
     { path: '/page-terms', component: PageTerms },
     { path: '/page-privacy', component: PagePrivacy },
 
-    //Page Work
+    // //Page Work
     { path: '/page-work-modern', component: PageWorkModern },
     { path: '/page-work-detail', component: PageWorkDetail },
     { path: '/page-work-classic', component: PageWorkClassic },
     { path: '/page-work-grid', component: PageWorkGrid },
     { path: '/page-work-masonry', component: PageWorkMasonry },
     
-    //Page Profile
+    // //Page Profile
     { path: '/page-profile', component: PageProfile },
     { path: '/page-profile-edit', component: PageProfileEdit },
     { path: '/page-invoice', component: PageInvoice },
 
-    //Page Job
+    // //Page Job
     { path: '/page-job', component: PageJob },
     { path: '/page-job-apply', component: PageJobApply },
     { path: '/page-job-detail', component: PageJobDetail },
@@ -234,28 +234,28 @@ const routes = [
     { path: '/page-job-company', component: PageJobCompany },
     { path: '/page-job-candidate', component: PageJobCandidate },
 
-    //Page Blog
+    // //Page Blog
     { path: '/page-blog-grid', component: PageBlog },
     { path: '/page-blog-detail', component: PageBlogDetail },
     { path: '/page-blog-sidebar', component: PageBlogSidebar },
     { path: '/page-blog-list', component: PageBlogList },
     { path: '/page-blog-list-sidebar', component: PageBlogListSidebar },
 
-    //Page Contact
+    // //Page Contact
     { path: '/page-contact-one', component: PageContactOne },
     { path: '/page-contact-three', component: PageContactThree },
     { path: '/page-contact-two', component: PageContactTwo },
 
-    //Docs
+    // //Docs
     { path: '/changelog', component: ChangeLog },
     { path: '/components', component: Components },
     { path: '/documentation', component: Documentation },
     { path: '/widget', component: Widget },
     
-    //Index Main
+    // Index Main
     { path: '/index', component: Main },
 
-    //Index root
+    // Index root
     
     { path: '/', component: Root, isWithoutLayout : true, exact : true }, 
     { component: PageError, isWithoutLayout : true, exact : false },

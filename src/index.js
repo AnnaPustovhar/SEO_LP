@@ -4,9 +4,11 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
 
+import SaasOnepage from './pages/Saas Onepage/index';
+
 const app = (
         <BrowserRouter>
-            <App />
+            <SaasOnepage/>
         </BrowserRouter>
 );
 

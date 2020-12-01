@@ -18,7 +18,8 @@ import Price from "./Price";
 import Team from "./Team";
 import ContactUs from "./ContactUs";
 import GoogleMap from "./GoogleMap";
-import Testi from "./Testi.js"
+import Testi from "./Testi.js";
+import NavbarPage from "./NavbarPage"
 
 class SaasOnepage extends Component {
     constructor(props, context) { 
@@ -107,6 +108,7 @@ class SaasOnepage extends Component {
     render() {
         return (
             <React.Fragment>
+                <NavbarPage/>
                 {/* section */}
                 <Section />
 
