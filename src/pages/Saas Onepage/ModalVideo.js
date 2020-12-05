@@ -8,6 +8,8 @@ import '../../../node_modules/react-modal-video/scss/modal-video.scss';
 
 //Import Images
 import laptop from "../../assets/images/onepage/laptop.png";
+import deal from "../../assets/images/hosting/deal-hend.png"
+
 
 class ModalVideoSection extends Component {
     constructor(props) {
@@ -29,16 +31,16 @@ class ModalVideoSection extends Component {
                     <Row>
                         <Col xs="12">
                             <div className="position-relative" style={{zIndex: "1"}} data-aos="zoom-in" data-aos-duration="1600">
-                                <img src={laptop} className="rounded img-fluid mx-auto d-block" alt=""/>
-                                <div className="play-icon">
+                                <img src={deal} className="rounded img-fluid mx-auto d-block" alt=""/>
+                                {/* <div className="play-icon">
                                     <Link to="#" onClick={this.openModal} className="play-btn video-play-icon">
                                         <i className="mdi mdi-play text-primary rounded-pill bg-white shadow"></i>
                                     </Link>
-                                </div>
+                                </div> */}
                             </div>
                         </Col>
                     </Row>
-                    <ModalVideo channel='vimeo' isOpen={this.state.isOpen} videoId='287684225' onClose={() => this.setState({ isOpen: false })} />
+                    {/* <ModalVideo channel='vimeo' isOpen={this.state.isOpen} videoId='287684225' onClose={() => this.setState({ isOpen: false })} /> */}
                 </Container>
             </React.Fragment>
         );

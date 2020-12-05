@@ -30,7 +30,7 @@ class Features extends Component {
             <React.Fragment>
             <Container>
                 {/* section title */}
-                <SectionTitle title="Jak działa SEO Premium w Up&More?" desc="Up&More to pierwsza w Polsce agencja SEO Premium.Bez rozwiązań pakietowych, ale z kompleksowym podejściem SEO łączącym elementy techniczne, content marketing i ePR. Poznaj nas i dowiedz się więcej!" />
+                <SectionTitle title="Jak działa SEO Premium w Up&More?" desc="Up&More to pierwsza w Polsce agencja SEO Premium. Bez rozwiązań pakietowych, ale z kompleksowym podejściem SEO łączącym elementy techniczne, content marketing i ePR. Poznaj nas i dowiedz się więcej!" />
 
                 {/* feature box */}
                 <Feature featureArray={this.state.features}/> 

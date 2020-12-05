@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Card, CardBody, Row, Col } from "reactstrap";
 
+import FeatherIcon from 'feather-icons-react';
 
 class ReviewSlider2 extends Component {
   constructor(props) {
@@ -39,20 +40,35 @@ class ReviewSlider2 extends Component {
     render() {
         return (
             <React.Fragment>
+                <Row className="mt-4 pt-2">
+                <Col lg="12" className={this.props.colClass} >
                           <div id="customer-testi" className="owl-carousel owl-theme owl-loaded owl-drag">
                                 <div className="owl-stage-outer">
                                     <div className="owl-stage">
                                 <Row>
                                     {
                                       this.state.step1 === true ?
+
                                         this.props.clients.map((client, key) =>
                                           key >= 0 && key <=2 ?
-                                            <Col key={key} md={this.state.cols} className="mb-1">
-                                              <Card className="customer-testi border-0 text-center">
+                                            <Col name="testi" key={key} md={this.state.cols} className="mb-1">
+                                              <Card className="pricing-rates business-rate shadow bg-white border-0 rounded " name="cases">
                                                   <CardBody>
-                                                      <img src={client.image} style={{height:65, width:65}} className="img-fluid avatar avatar-small rounded-circle mx-auto shadow" alt=""/>
-                                                      <p className="text-muted mt-4">" {client.desc} "</p>
-                                                      <h6 className="text-primary">- {client.name}</h6>
+                                                      <img src={client.image} style={{height:65, width:130}} className="img-fluid avatar avatar-small   center" alt=""/>
+                                                      <p className="text-secondary mt-4 text-center font-weight-bold mb-0">W ciągu 12 miesięcy działań zwiększyliśmy: {client.title} </p>
+                                                      {/* <h6 className="text-primary"> {client.name}</h6> */}
+                                                      
+                                                     
+                                                      <ul className="feature list-unstyled pl-0">
+                                                         {
+                                                            client.features.map((feature, key) =>
+                                                               <li key={key} className="feature-list text-muted"><i><FeatherIcon icon="check" className="fea icon-sm text-success mr-2" /></i>{feature.title}</li>
+                                                             ) 
+                                                         } 
+                                                     </ul>
+
+                                                    
+                                                     
                                                   </CardBody>
                                               </Card>
                                             </Col> : null
@@ -61,10 +77,10 @@ class ReviewSlider2 extends Component {
                                         this.props.clients.map((client, key) =>
                                         key >= 3 && key <=5 ?
                                             <Col key={key} md={this.state.cols} className="mb-1">
-                                              <Card className="customer-testi border-0 text-center">
+                                              <Card className="customer-testi border-0 text-center" name="cases">
                                                   <CardBody>
                                                       <img src={client.image} style={{height:65, width:65}} className="img-fluid avatar avatar-small rounded-circle mx-auto shadow" alt=""/>
-                                                      <p className="text-muted mt-4">" {client.desc} "</p>
+                                                      <p className="text-muted mt-4">" {client.title} "</p>
                                                       <h6 className="text-primary">- {client.name}</h6>
                                                   </CardBody>
                                               </Card>
@@ -79,6 +95,8 @@ class ReviewSlider2 extends Component {
                                                    <button type="button" onClick={() => {  this.setState({ step1 : false, step2 : true }) } } className={this.state.step2 ? "indicator-active" : "indicator-inactive"} ></button>
                                     </div>
                                 </div>
+                                </Col>
+                                </Row>
             </React.Fragment>
         );
     }

@@ -18,7 +18,7 @@ import Price from "./Price";
 import Team from "./Team";
 import ContactUs from "./ContactUs";
 import GoogleMap from "./GoogleMap";
-import Testi from "./Testi.js";
+import Testi from "./Testi";
 import NavbarPage from "./NavbarPage"
 
 class SaasOnepage extends Component {
@@ -47,7 +47,7 @@ class SaasOnepage extends Component {
         }
 
         //set AOS atttributes to slider <Media> tags
-        var elements=document.getElementsByName("clientsreview");
+        var elements=document.getElementsByName("cases");
         for(var j=0; j<elements.length; j++){
             elements[j].setAttribute("data-aos", "fade-up");
             elements[j].setAttribute("data-aos-duration", "1800");
@@ -78,7 +78,11 @@ class SaasOnepage extends Component {
         for(var b=0; b<team.length; b++){
             team[b].setAttribute("data-aos", "fade-up");
             team[b].setAttribute("data-aos-duration", "1200");
+        
         }
+        //amimation for testimonials
+      
+
 
         //set AOS atttributes to footer
         var footer=document.getElementsByName("footercolumn");
@@ -118,7 +122,7 @@ class SaasOnepage extends Component {
 
                     {/* process */}
                     {/* <Process/> */}
-                  
+                    {/* <Shape/> */}
                     {/* block container */}
                     <BlockContainer/>
 
@@ -133,8 +137,8 @@ class SaasOnepage extends Component {
         
                 <section className="section bg-light" id="testimonial">
                     {/* testimonials */}
-                    <Testimonials/>
-                    {/* <Testi/> */}
+                    {/* <Testimonials/> */}
+                    <Testi/>
                     {/* <Process/> */}
 
                     <Container className="pt-5">

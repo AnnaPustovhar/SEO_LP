@@ -28,7 +28,7 @@ class Pricing extends Component {
                                             )
                                         }
                                     </ul>
-                                    <Link to="" className="btn btn-primary mt-4">{pricing.buttonText}</Link>
+                                    <Link to="" className="btn btn-success mt-4">{pricing.buttonText}</Link>
                                     </CardBody>
                                 </Card>
                             </Col>                        

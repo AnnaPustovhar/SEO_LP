@@ -22,6 +22,10 @@
         }
     }
 }
+
+.image {
+    position: center
+}
 .owl-theme {
     .owl-dots {
         .owl-dot {
@@ -49,3 +53,10 @@
     overflow-x: hidden !important;
     cursor: pointer;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }

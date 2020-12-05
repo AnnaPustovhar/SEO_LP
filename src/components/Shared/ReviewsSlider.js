@@ -51,10 +51,10 @@ componentWillUnmount() {
                                             this.props.reviews.map((review, key) =>
                                                 key >= 0 && key <=2 ?
                                                 <Col key={key} md={this.state.cols} className="mb-1">
-                                                <Media className="customer-testi m-2"  name="clientsreview">
+                                                <Media className="customer-testi border-0 text-center"  name="clientsreview">
                                                   <img src={review.img} style={{height:65, width:65}} className="avatar avatar-small mr-3 rounded shadow" alt=""/>
                                                   <Media className="content p-3 shadow rounded bg-white position-relative" body>
-                                                      <StarRatings
+                                                      {/* <StarRatings
                                                           items={3}
                                                           rating={review.rating}
                                                           starRatedColor="#F17425"
@@ -62,7 +62,7 @@ componentWillUnmount() {
                                                           name='rating'
                                                           starDimension = "15px"
                                                           starSpacing ="3px"
-                                                      />
+                                                      /> */}
                                                       <p className="text-muted mt-2">" {review.desc} "</p>
                                                       <h6 className="text-primary">- {review.name} <small className="text-muted">{review.post}</small></h6>
                                                   </Media>
@@ -76,7 +76,7 @@ componentWillUnmount() {
                                             <Media className="customer-testi m-2"  name="clientsreview">
                                             <img src={review.img} style={{height:65, width:65}} className="avatar avatar-small mr-3 rounded shadow" alt=""/>
                                             <Media className="content p-3 shadow rounded bg-white position-relative" body>
-                                                <StarRatings
+                                                {/* <StarRatings
                                                     items={3}
                                                     rating={review.rating}
                                                     starRatedColor="#F17425"
@@ -84,7 +84,7 @@ componentWillUnmount() {
                                                     name='rating'
                                                     starDimension = "15px"
                                                     starSpacing ="3px"
-                                                />
+                                                /> */}
                                                 <p className="text-muted mt-2">" {review.desc} "</p>
                                                 <h6 className="text-primary">- {review.name} <small className="text-muted">{review.post}</small></h6>
                                             </Media>

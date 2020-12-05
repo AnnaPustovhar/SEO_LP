@@ -51,7 +51,7 @@ class BlockContainer extends Component {
     
                         <Col sm="5" className="mt-4 mt-sm-0">
                             <div className="text-sm-right">
-                                <Link to="#" onClick={this.togglemodal} className="btn btn-primary rounded mouse-down mr-2 mb-2">Napisz do nas!</Link>
+                                <Link to="#" onClick={this.togglemodal} id="aaa" className="btn btn-success rounded mouse-down mr-2 mb-2">Napisz do nas!</Link>
                             </div>
                         </Col>
                     </Row>
@@ -64,7 +64,7 @@ class BlockContainer extends Component {
                                         Wiadomośc wysłana
                                     </Alert>
                         <ModalHeader  toggle={this.togglemodal}>
-                            Opowiedz nam o potrzebach Twojego biznesu ! Znajdziemy rozwiązanie!
+                            Opowiedz nam o potrzebach Twojego biznesu !My znajdziemy rozwiązanie!
                         </ModalHeader>
                         <ModalBody>
                             <div className="feature-form">
@@ -74,10 +74,7 @@ class BlockContainer extends Component {
                                
                                 <div className="custom-form bg-white">
                                 <div id="message"></div>
-                                {/* <Alert color="info" isOpen={this.state.successMsg} toggle={()=>{ this.setState({successMsg : !this.state.successMsg}) }}>
-                                        Wiadomośc wysłana
-                                    </Alert> */}
-                                    
+                              
                                     <Form method = "post" onSubmit={this.handleSubmit} name="contact-form" id="contact-form">
                                         <Row>
                                             <Col lg="6">

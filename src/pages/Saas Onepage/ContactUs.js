@@ -128,7 +128,7 @@ class ContactUs extends Component {
                                 <ul className="contact-detail d-flex align-items-center mt-3" data-aos="fade-up" data-aos-duration="1200">
                                     <li className="list-inline-item mb-0"><Link to="#" className="fea icon-m-md text-dark mr-3"><i><FeatherIcon icon="facebook" className="fea icon-sm fea-social" /></i></Link></li>
                                     <li className="list-inline-item mb-0"><Link to="#" className="fea icon-m-md text-dark mr-3"><i><FeatherIcon icon="instagram" className="fea icon-sm fea-social" /></i></Link></li>
-                                    <li className="list-inline-item mb-0"><Link to="#" className="fea icon-m-md text-dark mr-3"><i><FeatherIcon icon="linkedin" className="fea icon-sm fea-social" /></i></Link></li>
+                                    <li className="list-inline-item mb-0"><Link to="#" className="rounded mr-1"><i><FeatherIcon icon="linkedin" className="fea icon-sm fea-social" /></i></Link></li>
                                     
                                 </ul>
                                 </CardBody>
