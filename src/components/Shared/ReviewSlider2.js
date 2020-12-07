@@ -40,22 +40,18 @@ class ReviewSlider2 extends Component {
     render() {
         return (
             <React.Fragment>
-                <Row className="mt-4 pt-2">
-                <Col lg="12" className={this.props.colClass} >
-                          <div id="customer-testi" className="owl-carousel owl-theme owl-loaded owl-drag">
-                                <div className="owl-stage-outer">
-                                    <div className="owl-stage">
+             
                                 <Row>
                                     {
-                                      this.state.step1 === true ?
+                                     
 
                                         this.props.clients.map((client, key) =>
-                                          key >= 0 && key <=2 ?
-                                            <Col name="testi" key={key} md={this.state.cols} className="mb-1">
-                                              <Card className="pricing-rates business-rate shadow bg-white border-0 rounded " name="cases">
+                                         
+                                            <Col md="4" name="testi" key={key} md={this.state.cols} className="mt-4 pt-2">
+                                              <Card className="work-process border-0 rounded shadow " name="cases">
                                                   <CardBody>
-                                                      <img src={client.image} style={{height:65, width:130}} className="img-fluid avatar avatar-small   center" alt=""/>
-                                                      <p className="text-secondary mt-4 text-center font-weight-bold mb-0">W ciągu 12 miesięcy działań zwiększyliśmy: {client.title} </p>
+                                                      <img src={client.image} className="img-fluid avatar avatar-small center" alt=""/>
+                                                      <p className="text-secondary mt-4 text-center font-weight-bold mb-0">W ciągu 12 miesięcy działań zwiększyliśmy: </p>
                                                       {/* <h6 className="text-primary"> {client.name}</h6> */}
                                                       
                                                      
@@ -71,32 +67,13 @@ class ReviewSlider2 extends Component {
                                                      
                                                   </CardBody>
                                               </Card>
-                                            </Col> : null
+                                            </Col> 
                                         )
-                                        :
-                                        this.props.clients.map((client, key) =>
-                                        key >= 3 && key <=5 ?
-                                            <Col key={key} md={this.state.cols} className="mb-1">
-                                              <Card className="customer-testi border-0 text-center" name="cases">
-                                                  <CardBody>
-                                                      <img src={client.image} style={{height:65, width:65}} className="img-fluid avatar avatar-small rounded-circle mx-auto shadow" alt=""/>
-                                                      <p className="text-muted mt-4">" {client.title} "</p>
-                                                      <h6 className="text-primary">- {client.name}</h6>
-                                                  </CardBody>
-                                              </Card>
-                                            </Col> : null
-                                        )
+                                        
+                                       
                                     }
                                     </Row>
-                                </div>
-                                </div>
-                                    <div className="custom-owl-dots">
-                                                   <button type="button" onClick={() => {  this.setState({ step1 : true, step2 : false }) } }  className={this.state.step1 ? "indicator-active" : "indicator-inactive"} ></button>
-                                                   <button type="button" onClick={() => {  this.setState({ step1 : false, step2 : true }) } } className={this.state.step2 ? "indicator-active" : "indicator-inactive"} ></button>
-                                    </div>
-                                </div>
-                                </Col>
-                                </Row>
+                                
             </React.Fragment>
         );
     }

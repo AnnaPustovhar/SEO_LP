@@ -16,7 +16,7 @@ import Feature from "../../components/Shared/Feature";
 class Features extends Component {
     state = {
         features : [
-            { id : 1, imgUrl : pen, title : "Audyt SEO", description : "Opracujemy i wdrożymy zalecenia optymalizacyjme do Twojego serwisu www ( zpomocą zespołu Up&More to proste!)." },
+            { id : 1, imgUrl : pen , title : "Audyt SEO", description : "Opracujemy i wdrożymy zalecenia optymalizacyjme do Twojego serwisu www ( z pomocą zespołu Up&More to proste!)."},
             { id : 2, imgUrl : video, title : "Rozwój treści", description : "Przeprowadzimy audyt treści w serwisie i przygotujemy zoptymalizowane treści (sami zajmiemy się ich rozwojem i publikacją!)" },
             { id : 3, imgUrl : intellectual, title : "Strategia linkowania", description : "Opracujemy i wdrożymy strategię pozyskiwania wysokiej jakości linków do domeny (cały proces po naszej stronie, dzięki czemu dbamy o każdy element SEO" },
             { id : 4, imgUrl : user, title : "Elastyczność działań", description : "Wiemy, że biznes działa w zmiennych warunkach i naszym celem jest maksymalne dopasowanie realizowanych działąń do Twoich nowych potrzeb (w każdej chwili możemy zmienić zakres, strategię i nakłady!" },

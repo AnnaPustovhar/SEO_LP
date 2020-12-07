@@ -8,9 +8,9 @@ import ReviewSlider2 from "../../components/Shared/ReviewSlider2";
 import SectionTitle from "../../components/Shared/SectionTitle";
 
 //Import Images
-import client1 from "../../assets/images/client/Panek.png";
-import client2 from "../../assets/images/client/amerigas.png";
-import client3 from "../../assets/images/client/Szkola.png";
+import client1 from "../../assets/images/client/Panek1.png";
+import client2 from "../../assets/images/client/Amerigas1.svg";
+import client3 from "../../assets/images/client/szkolabiznesu.png";
 import client4 from "../../assets/images/client/04.jpg";
 import client5 from "../../assets/images/client/05.jpg";
 import client6 from "../../assets/images/client/06.jpg";
@@ -18,12 +18,9 @@ import client6 from "../../assets/images/client/06.jpg";
 class Testi extends Component {
     state = {
         clients : [
-            { id : 1,  image : client1,
-                features: [
-                    {title: "widocznośc serwisu panekcs.pl w TOP dla +41 nowych fraz kluczowych"},
-                    {title: "wuch organiczny +96%"},
-                    {title: "liczbę UU z bezpłatnych wyników wyszukiwania +93%"}
-
+            { id : 1,  
+              image : client1,
+                features: [  {title: "widocznośc serwisu panekcs.pl w TOP dla +41 nowych fraz kluczowych"}, {title: "wuch organiczny +96%"},  {title: "liczbę UU z bezpłatnych wyników wyszukiwania +93%"}
                 ]
             },
 
