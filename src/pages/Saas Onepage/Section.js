@@ -49,18 +49,20 @@ class Section extends Component {
                         <Row className="align-items-center">
                             <Col lg={7} md={7}>
                                 <div className="title-heading">
-                                    <h1 className="font-weight-bold">Poznaj PremiumSEO</h1>
+                                    <h1 className="font-weight-bold text-black">Poznaj PremiumSEO</h1>
                                     
                                 
                                     <h4 className="heading font-weight-bold mb-3">
                                     <Typist>
                                     <span className="element text-primary"> w Warszawie</span>
                                     <Typist.Backspace count={15} delay={800} />
-                                    <span className="element text-primary">od Up&More !</span>
+                                    {/* <span className="element text-primary">od Up&More !</span> */}
+                                    <span className="font-weight-bold text-black title ">od <span className="element text-primary">Up&More</span> </span>
+
                                 </Typist>
                                 </h4>
                                     
-                                    <p className="para-desc text-muted">PremiumSEO to pozycjonowanie dostosowane do realnych potrzeb Twojej firmy. Zarabiaj dziéki wysokim pozycjom!</p>
+                                    <p className="para-desc text-muted">PremiumSEO to pozycjonowanie dostosowane do realnych potrzeb Twojej firmy. Zarabiaj dzięki wysokim pozycjom!</p>
                                 
                                     <div className="mt-4 pt-2"> 
                                     <ScrollspyNav

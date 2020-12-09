@@ -14,7 +14,7 @@ import image4 from "../../assets/images/client/04.png";
 class Team extends Component {
     state = {
         candidates : [
-            { id : 1, image : image1, name : "Piotr Starzyński", designation : "CEO", salary : "2300",
+            { id : 1, image : image3, name : "Adriana Napiórkowska", designation : "Senior SEO Specialist", salary : "2300", qualification: "Posiada 9-letnie doświadczenie zawodowe, karierę rozpoczynała w agencji Emarketing Experts jako młodszy specjalista SEO. Oprócz pozycjonowania stron, zajmowała się prowadzeniem projektów marketingu 360° jako Account Manager w They.pl. Pracowała dla firm z sektora finansowego (Bank Millennium, Bank Meritum, Finai S.A.), e-commerce (np. Black Red White, Autoland, Mumla). W Up&More odpowiada między innymi za projekty SEO dla Panek Car Sharing, Amerigas, Interparking, H+H czy Autoplaza.",
                 socialIds : [
                     { icon : "facebook", link : "#" },
                     { icon : "instagram", link : "#" },
@@ -22,7 +22,7 @@ class Team extends Component {
                     { icon : "linkedin", link : "#" },
                 ]
             },
-            { id : 2, image : image2, name : "Tomasz Starzyński", designation : "CEO", salary : "1950", link : "",
+            { id : 2, image : image2, name : "Tomasz Starzyński", designation : "CEO", salary : "1950", qualification: "Posiada 9-letnie doświadczenie zawodowe, karierę rozpoczynała w agencji Emarketing Experts jako młodszy specjalista SEO. Oprócz pozycjonowania stron, zajmowała się prowadzeniem projektów marketingu 360° jako Account Manager w They.pl. Pracowała dla firm z sektora finansowego (Bank Millennium, Bank Meritum, Finai S.A.), e-commerce (np. Black Red White, Autoland, Mumla). W Up&More odpowiada między innymi za projekty SEO dla Panek Car Sharing, Amerigas, Interparking, H+H czy Autoplaza.",link : "",
                 socialIds : [
                     { icon : "facebook", link : "#" },
                     { icon : "instagram", link : "#" },
@@ -30,7 +30,7 @@ class Team extends Component {
                     { icon : "linkedin", link : "#" },
                 ]
             },
-            { id : 3, image : image3, name : "Adriana Napiórkowska", designation : "Senior SEO Specialist", salary : "2540", link : "",
+            { id : 3, image : image1, name : "Piotr Starzyński", designation : "CEO", salary : "2540", qualification: "Posiada 9-letnie doświadczenie zawodowe, karierę rozpoczynała w agencji Emarketing Experts jako młodszy specjalista SEO. Oprócz pozycjonowania stron, zajmowała się prowadzeniem projektów marketingu 360° jako Account Manager w They.pl. Pracowała dla firm z sektora finansowego (Bank Millennium, Bank Meritum, Finai S.A.), e-commerce (np. Black Red White, Autoland, Mumla). W Up&More odpowiada między innymi za projekty SEO dla Panek Car Sharing, Amerigas, Interparking, H+H czy Autoplaza." ,link : "",
                 socialIds : [
                     { icon : "facebook", link : "#" },
                     { icon : "instagram", link : "#" },
@@ -38,7 +38,7 @@ class Team extends Component {
                     { icon : "linkedin", link : "#" },
                 ]
             },
-            { id : 4, image : image4, name : "Anna Pustovhar", designation : "Junior SEO&Analytics Specialist", salary : "2190", link : "",
+            { id : 4, image : image4, name : "Anna Pustovhar", designation : "Junior SEO Specialist", salary : "2190", qualification: "Posiada 9-letnie doświadczenie zawodowe, karierę rozpoczynała w agencji Emarketing Experts jako młodszy specjalista SEO. Oprócz pozycjonowania stron, zajmowała się prowadzeniem projektów marketingu 360° jako Account Manager w They.pl. Pracowała dla firm z sektora finansowego (Bank Millennium, Bank Meritum, Finai S.A.), e-commerce (np. Black Red White, Autoland, Mumla). W Up&More odpowiada między innymi za projekty SEO dla Panek Car Sharing, Amerigas, Interparking, H+H czy Autoplaza.", link : "",
                 socialIds : [
                     { icon : "facebook", link : "#" },
                     { icon : "instagram", link : "#" },

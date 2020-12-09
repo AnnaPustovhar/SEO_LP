@@ -20,7 +20,7 @@ class Testi extends Component {
         clients : [
             { id : 1,  
               image : client1,
-                features: [  {title: "widocznośc serwisu panekcs.pl w TOP dla +41 nowych fraz kluczowych"}, {title: "wuch organiczny +96%"},  {title: "liczbę UU z bezpłatnych wyników wyszukiwania +93%"}
+                features: [  {title: "widocznośc serwisu panekcs.pl w TOP dla +41 nowych fraz kluczowych"}, {title: "ruch organiczny +96%"},  {title: "liczbę UU z bezpłatnych wyników wyszukiwania +93%"}
                 ]
             },
 
@@ -28,7 +28,7 @@ class Testi extends Component {
                 features:[
                     {title: "widoczność organiczną serwisu w Top10 +85% fraz więcej"},
                     {title: "ruch organiczny +103% sesji"},
-                    {title: "ilość nowych użytkowników pochodzących z ruchu organicznego +124%" },
+                    {title: "ilość nowych użytkowników z ruchu organicznego +124%" },
                 ]
             },
 
@@ -36,6 +36,10 @@ class Testi extends Component {
                 features:[
                     {title: "widoczność organiczną w Top10 +20 fraz więcej"},
                     {title: " Ilość ruchu organicznego +134%." },
+                    {title: " Tu trzeba wpisać frazę na taką ilość znaków " },
+                    
+                    
+                
                 ]
             },
             // { id : 4, image : client4, name : "Jill Webb" , title: "Thus, Lorem Ipsum has only limited suitability as a visual filler for German texts." },

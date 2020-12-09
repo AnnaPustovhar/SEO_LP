@@ -2,7 +2,7 @@
 // footer.scss
 //
 .footer {
-    background: $footer;
+    // background: $white;
     padding: 60px 0;
     position: relative;
     color: $gray-500;
@@ -54,6 +54,6 @@
     }    
     &.footer-bar {
         padding: 30px 0;
-        border-top: 1px solid darken($gray-700, 5%);
+        // border-top: 1px solid darken($gray-700, 5%);
     }
 }

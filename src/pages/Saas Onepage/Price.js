@@ -55,12 +55,12 @@ class Price extends Component {
                         {/* section title */}
                         <SectionTitle title="Nasze modele rozliczeń" desc=" Poznaj nasze modele rozliczeń i wybierz rozwiązanie najlepsze dla siebie" />
 
-                        <Row id="pricing">
+                        <Row id="pricing" className="justify-content-center">
                             <Pricing pricings={this.state.pricings} />
                         </Row>
                     </Container>
                 </section>
-                <Modal isOpen={this.state.modal} role="dialog" centered={true} id="trialform">
+                {/* <Modal isOpen={this.state.modal} role="dialog" centered={true} id="trialform">
                                     <Alert color="info" isOpen={this.state.successMsg} toggle={()=>{ this.setState({successMsg : !this.state.successMsg}) }}>
                                         Wiadomośc wysłana
                                     </Alert>
@@ -100,13 +100,13 @@ class Price extends Component {
                                                     <i><FeatherIcon icon="message-circle" className="fea icon-sm icons" /></i>
                                                     <textarea name="comments" id="comments" rows="4" className="form-control pl-5" placeholder="Twoja wiadomość. P. S. : podaj nazwę firmy - będzie nam łatwiej się odnieść do Twojego pytania :"></textarea>
                                                     {/* <Input type="password" className="form-control pl-5" placeholder="Twoja wiadomość. P. S. : Podaj nazwę firmy. Będzie nam łątwiej się odnieść do Twojego pytania." required=""/> */}
-                                                </FormGroup>
-                                            </Col>
+                                                {/* </FormGroup>
+                                            </Col> */}
     
                                             {/* <Col lg="12" className="mt-2 mb-0">
                                                 <Button color="primary" className="w-100">Wyślij wiadomość</Button>
                                             </Col> */}
-                                             <Col sm="12" className="text-center">
+                                             {/* <Col sm="12" className="text-center">
                                                 <Input type="submit" id="submit" name="send" className="submitBnt btn btn-primary btn-block" value="Wyślij wiadomość"/>
                                                 <div id="simple-msg"></div>
                                             </Col>
@@ -115,7 +115,7 @@ class Price extends Component {
                                 </div>
                             </div>
                         </ModalBody>
-            </Modal>
+            </Modal> */} 
             </React.Fragment>
         );
     }

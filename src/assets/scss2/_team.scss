@@ -8,8 +8,18 @@
     .name {
         &:hover {
             color: $primary !important;
+            
         }
+        
     }
+    .siize {
+        font-weight: 700;
+        font-size: 19px;
+    }
+   .qual {
+       font-size: 13px;
+       font-weight: 500;
+   }
     .team-icon {
         position: absolute;
         bottom: 50%;
@@ -32,4 +42,7 @@
             opacity: 1;
         }
     }   
+
+    
 }
+

@@ -47,11 +47,17 @@ class ReviewSlider2 extends Component {
 
                                         this.props.clients.map((client, key) =>
                                          
-                                            <Col md="4" name="testi" key={key} md={this.state.cols} className="mt-4 pt-2">
-                                              <Card className="work-process border-0 rounded shadow " name="cases">
+                                            <Col name="clients" md="4" name="testi" key={key} md={this.state.cols} className="mt-4 pt-2">
+                                              <Card className={ client.isActive ? "pricing-rates business-rate shadow bg-white border-0 rounded" : "pricing-rates business-rate shadow bg-light border-0 rounded"}>
                                                   <CardBody>
                                                       <img src={client.image} className="img-fluid avatar avatar-small center" alt=""/>
-                                                      <p className="text-secondary mt-4 text-center font-weight-bold mb-0">W ciągu 12 miesięcy działań zwiększyliśmy: </p>
+                                                      <h2 className={client.isActive ? "title text-uppercase text-primary mb-4" : "title text-uppercase mb-4"}>{client.title}</h2>
+                                                      <div className="d-flex mb-4" name="pricingsection">
+                                                           <span className="h4 mb-0 mt-2"></span>
+                                                           <span className="price h1 mb-0">{client.price}</span>
+                                                           <span className="h5 align-self-end mb-1 text-center ">{client.duration}W ciągu 12 miesięcy działań zwiększyliśmy:</span>
+                                                       </div>
+                                                      {/* <p className="text-secondary mt-4 text-center font-weight-bold mb-0">W ciągu 12 miesięcy działań zwiększyliśmy: </p> */}
                                                       {/* <h6 className="text-primary"> {client.name}</h6> */}
                                                       
                                                      
@@ -62,11 +68,11 @@ class ReviewSlider2 extends Component {
                                                              ) 
                                                          } 
                                                      </ul>
+                                                   </CardBody>
 
-                                                    
-                                                     
-                                                  </CardBody>
-                                              </Card>
+                                                </Card>
+
+                                                
                                             </Col> 
                                         )
                                         

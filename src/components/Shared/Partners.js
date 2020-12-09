@@ -15,8 +15,8 @@ class Partners extends Component {
             <React.Fragment>
                         <Row className="justify-content-center" id="partners">
                             <Col id="partner1" lg="2" md="2" xs="6" className="text-center">
-                                <img src={img1} className="avatar avatar-ex-md" alt=""/>
-                            </Col>
+                                <img src={img1} className="avatar  avatar-ex-md" alt=""/>
+                            </Col> 
 
                             <Col id="partner2" lg="2" md="2" xs="6" className="text-center">
                                 <img src={img2} className="avatar avatar-ex-md" alt=""/>

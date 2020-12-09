@@ -14,12 +14,18 @@ import ModalVideoSection from "./ModalVideo";
 import Shape from "./Shape";
 import Testimonials from "./Testimonials";
 import Partners from "../../components/Shared/Partners";
+import Tools from "../../components/Shared/Tools";
 import Price from "./Price";
 import Team from "./Team";
 import ContactUs from "./ContactUs";
 import GoogleMap from "./GoogleMap";
 import Testi from "./Testi";
-import NavbarPage from "./NavbarPage"
+import NavbarPage from "./NavbarPage";
+import CTA from"../SocialMarketing/Cta"
+import Footer from "../../components/Layout/FooterWithoutMenuLightSocialOnly"
+
+
+
 
 class SaasOnepage extends Component {
     constructor(props, context) { 
@@ -46,7 +52,7 @@ class SaasOnepage extends Component {
             elementsDesc[i].setAttribute("data-aos-duration", "1000");
         }
 
-        //set AOS atttributes to slider <Media> tags
+        //set AOS atttributes to slider Testimonials tags
         var elements=document.getElementsByName("cases");
         for(var j=0; j<elements.length; j++){
             elements[j].setAttribute("data-aos", "fade-up");
@@ -60,6 +66,14 @@ class SaasOnepage extends Component {
             features[f].setAttribute("data-aos-duration", "1800");
         }
 
+         //amimation for tools
+
+         var elements=document.getElementsByName("tools");
+         for(var j=0; j<elements.length; j++){
+             elements[j].setAttribute("data-aos", "fade-up");
+             elements[j].setAttribute("data-aos-duration", "1800");
+         }
+      
         //set AOS atttributes to partners
         for(var k=1; k<=6;k++){
             document.getElementById("partner"+k).setAttribute("data-aos", "fade-up");
@@ -80,8 +94,9 @@ class SaasOnepage extends Component {
             team[b].setAttribute("data-aos-duration", "1200");
         
         }
-        //amimation for testimonials
-      
+
+       
+
 
 
         //set AOS atttributes to footer
@@ -115,50 +130,68 @@ class SaasOnepage extends Component {
                 <NavbarPage/>
                 {/* section */}
                 <Section />
+                <Tools/>
 
                 <section className="section pb-0" id="service">
                     {/* features */}
                     <Features/>
-
-                    {/* process */}
-                    {/* <Process/> */}
-                    {/* <Shape/> */}
-                    {/* block container */}
-                    <BlockContainer/>
-
+                   
+                    {/* <BlockContainer/> 
                     {/* modal Video */}
-                    <ModalVideoSection/>
+                    {/* <ModalVideoSection/> */}
                     
+                     <CTA/>
                 </section>
 
-                {/* shape */}
-                <Shape/>
-                <Price /> 
-        
-                <section className="section bg-light" id="testimonial">
-                    {/* testimonials */}
-                    {/* <Testimonials/> */}
-                    <Testi/>
-                    {/* <Process/> */}
+               
+                {/* <section className="section bg-light" id="testimonial">
+                    
+                 
+                    <UsedTools/>
 
                     <Container className="pt-5">
-                        {/* partners */}
+                   
+                    </Container>    
+                </section> */}
+
+                <section className="section pb-0" id="service">
+                    {/* features */}
+                 
+                   
+                    {/* <BlockContainer/>  */}
+                    {/* modal Video */}
+                    {/* <ModalVideoSection/>
+                    
+                     */}
+                </section>
+
+               
+                 
+        
+                <section className="section bg-light" id="testimonial">
+                    
+                 
+                    <Testi/>
+
+                    <Container className="pt-5">
                         <Partners />  
                     </Container>    
                 </section>
-
-                {/* pricing */}
+                
+                <Price />
+             
             
         
                 {/* team members */}
+                
                 <Team/>
         
                 <section className="section pb-0" id="contact">
                     {/* contact us */}
                     <ContactUs/>
-
+                     <Footer/>
                     {/* google map */}
-                    <GoogleMap/>
+                    {/* <GoogleMap/> */}
                 </section>
             </React.Fragment>
         );
